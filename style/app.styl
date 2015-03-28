@@ -1,0 +1,123 @@
+@import constants
+@import utils
+
+body, html {	
+	background : mainColorWhite;
+	min-height: 100%;
+}
+
+
+/*
+ * Navbar customization
+ */
+
+.navbar-default {
+	background : mainColor
+}
+
+.navbar-default .navbar-brand{
+	color : mainColorWhite
+}
+
+.navbar-default .navbar-brand:focus{
+	color : mainColorWhite
+}
+
+.navbar-default .navbar-brand:hover{
+	color : mainColorVeryLight
+}
+
+.navbar-default .navbar-nav li a{
+	color : mainColorWhite
+}
+
+.navbar-default .navbar-nav li a:focus{
+	color : mainColorWhite
+}
+
+.navbar-default .navbar-nav li a:hover{
+	color : mainColorVeryLight
+}
+
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:focus{
+	color : mainColorWhite
+	background : mainColorDark
+}
+
+.navbar-default .navbar-nav .active a:hover{
+	color : mainColorVeryLight
+	background : mainColorDark
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: mainColorDark
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: white
+}
+
+.navbar-default .navbar-toggle:focus {
+	background: mainColor
+	color : mainColorWhite
+}
+
+.navbar-default .nav>Li>div>select{
+	color : mainColor;
+	height : 100%;
+	width : 100%;
+	padding : 5px 0;
+	margin-top : 10px;
+	border : 2px solid mainColorLight
+}
+
+.navbar-default .nav>Li>div{
+	margin : 0 10px;
+}
+
+.navbar-default .nav>Li>div>select:focus{
+	outline : 0
+}
+ 
+ /*
+  * Footer customization
+  */
+.home__footer {
+	position:absolute;
+  	bottom:0;
+   	width:100%;
+   	height:60px;
+   	background-color : mainColor
+}
+
+/* 
+	Home 
+*/
+.home__content {
+	padding-bottom:60px // footer height
+}
+
+.home__footer__item {
+	color : mainColorWhite
+	padding-top : 15px;
+}
+
+.home__footer__item__link{
+	color : white
+}
+
+.home__footer__item__link:hover{
+	color : mainColorVeryLight
+}
+/*
+	Index 
+*/
+.index__content {
+	min-height : 100%
+  	position:relative;
+}

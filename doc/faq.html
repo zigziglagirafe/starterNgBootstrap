@@ -1,0 +1,73 @@
+<p><a href="http://html5boilerplate.com">HTML5 Boilerplate homepage</a> | <a href="TOC.md">Documentation
+table of contents</a></p>
+<h1 id="frequently-asked-questions">Frequently asked questions</h1>
+<ul>
+<li><a href="#why-is-the-url-for-jquery-without-http">Why is the URL for jQuery without
+<code>http</code>?</a></li>
+<li><a href="#why-dont-you-automatically-load-the-latest-version-of-jquery-from-the-google-cdn">Why don&#39;t you automatically load the latest version of jQuery from the Google
+CDN?</a></li>
+<li><a href="#why-is-the-google-analytics-code-at-the-bottom-google-recommends-it-be-placed-in-the-head">Why is the Google Analytics code at the bottom? Google recommends it be
+placed in the <code>&lt;head&gt;</code>.</a></li>
+<li><a href="#how-can-i-integrate-bootstrap-with-html5-boilerplate">How can I integrate Bootstrap with HTML5
+Boilerplate?</a></li>
+<li><a href="#do-i-need-to-upgrade-my-site-each-time-a-new-version-of-html5-boilerplate-is-released">Do I need to upgrade my site each time a new version of HTML5 Boilerplate is
+released?</a></li>
+<li><a href="#where-can-i-get-help-with-support-questions">Where can I get help with support
+questions?</a></li>
+</ul>
+<p>--</p>
+<h3 id="why-is-the-url-for-jquery-without-http-">Why is the URL for jQuery without <code>http</code>?</h3>
+<p>It is because of the use of <a href="http://paulirish.com/2010/the-protocol-relative-url/">protocol-relative
+URLs</a>.</p>
+<p><strong>N.B.</strong> If you try to view the local web page directly in the browser, the
+browser will fail to load the assets specified using protocol-relative URLs
+as it will attempt to fetch them from the local file system. We recommend you
+use a local HTTP server to test your web pages, or a file hosting service that
+allows you to preview your web pages online (e.g.
+<a href="https://www.dropbox.com/">Dropbox</a>).</p>
+<p>Setting up a local HTTP server can be done using there various
+<a href="https://gist.github.com/willurd/5720255">one-liners</a>:</p>
+<ul>
+<li>PHP 5.4.0+ by running
+<a href="https://php.net/manual/en/features.commandline.webserver.php"><code>php -S localhost:8080</code></a>
+from your local directory</li>
+<li>Python 2.x by running <code>python -m SimpleHTTPServer</code> from your local directory</li>
+<li>Python 3.x by running <code>python -m http.server</code> from your local directory</li>
+<li>Ruby 1.9.2+ by running <code>ruby -run -ehttpd . -p8080</code> from your local directory</li>
+<li>Node.js by installing and running either
+<a href="https://www.npmjs.org/package/node-static"><code>static -p 8080</code></a>
+or <a href="https://www.npmjs.org/package/http-server"><code>http-server -p 8080</code></a></li>
+</ul>
+<p>A list of more complex HTTP servers can be found
+<a href="misc.md#servers-and-stacks">here</a>.</p>
+<h3 id="why-don-t-you-automatically-load-the-latest-version-of-jquery-from-the-google-cdn-">Why don&#39;t you automatically load the latest version of jQuery from the Google CDN?</h3>
+<p>The <a href="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js">file</a> to which
+the Google <a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN</a> points
+to is <a href="http://blog.jquery.com/2014/07/03/dont-use-jquery-latest-js/">no longer updated and will stay locked at version <code>1.11.1</code> in order to
+prevent inadvertent web
+breakage</a>.</p>
+<p>In general, version updating should be an intentional decision! You shouldn&#39;t
+include a URL that will always point to the latest version, as that version:</p>
+<ul>
+<li>may not be compatible with the existing plugins/code on the site</li>
+<li>will have a very short cache time compare to the specific version,
+which means that users won&#39;t get the benefits of long-term caching</li>
+</ul>
+<h3 id="why-is-the-google-analytics-code-at-the-bottom-google-recommends-it-be-placed-in-the-head-">Why is the Google Analytics code at the bottom? Google recommends it be placed in the <code>&lt;head&gt;</code>.</h3>
+<p>The main advantage of placing it in the <code>&lt;head&gt;</code> is that you will track the
+user&#39;s <code>pageview</code> even if they leave the page before it has been fully loaded.
+However, having the code at the bottom of the page <a href="http://stevesouders.com/efws/inline-scripts-bottom.php">helps improve
+performance</a>.</p>
+<h3 id="how-can-i-integrate-bootstrap-http-getbootstrap-com-with-html5-boilerplate-">How can I integrate <a href="http://getbootstrap.com/">Bootstrap</a> with HTML5 Boilerplate?</h3>
+<p>One simple way is to use <a href="http://initializr.com">Initializr</a> and create a
+custom build that includes both HTML5 Boilerplate and
+<a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+<p>Read more about how <a href="https://www.quora.com/Is-Bootstrap-a-complement-or-an-alternative-to-HTML5-Boilerplate-or-viceversa/answer/Nicolas-Gallagher">HTML5 Boilerplate and Bootstrap complement each
+other</a>.</p>
+<h3 id="do-i-need-to-upgrade-my-site-each-time-a-new-version-of-html5-boilerplate-is-released-">Do I need to upgrade my site each time a new version of HTML5 Boilerplate is released?</h3>
+<p>No, same as you don&#39;t normally replace the foundation of a house once it
+was built. However, there is nothing stopping you from trying to work in the
+latest changes, but you&#39;ll have to assess the costs/benefits of doing so.</p>
+<h3 id="where-can-i-get-help-with-support-questions-">Where can I get help with support questions?</h3>
+<p>Please ask for help on
+<a href="https://stackoverflow.com/questions/tagged/html5boilerplate">StackOverflow</a>.</p>
